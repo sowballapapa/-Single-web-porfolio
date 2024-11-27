@@ -1,0 +1,224 @@
+body{
+    margin: 0;
+    font-family: "Tomorrow", sans-serif;
+    background: linear-gradient(45deg, aliceblue, white);
+}
+
+header{
+    padding: 20px 10px 10px;
+    color: white;
+    background-color:midnightblue;
+    border-bottom: 5px solid lightblue;
+
+}
+.name{
+    float: left;
+    address{
+        font-size: smaller;
+    }
+}
+main{
+    margin: 10px;
+}
+.menu{
+    float: right;
+    ul li{
+        display: inline;
+        margin-left: 2em;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+        font-weight:600;
+    }
+    a:hover, a:focus{
+        color: lightblue;
+        font-weight: bolder;
+        font-style: italic;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
+
+main{
+    display: grid;
+}
+
+#about{
+    margin-top: 1em;
+    padding: 0 2em;
+    figure{
+        margin-right: 7em;
+    }
+    article h1{
+        color: midnightblue;
+        font-size: xx-large;
+    }
+    article p{
+        text-align: justify;
+    }
+}
+.my_img{
+    width: 200px;
+    height: 200px;
+    border: dashed gray 2px;
+}
+hr{
+    height: 3px;
+    background-color: midnightblue;
+}
+h2{
+    text-shadow: 0px 5px 2px rgb(25, 25, 112, 0.6);
+}
+
+#skills_tag{
+    display: grid;grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.skills{
+    flex-wrap: nowrap;
+    border: 1px solid black;
+    width: 180px;
+    height: 180px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 8px 10px rgba(39, 39, 39, 0.8) ;
+    background-color: whitesmoke;
+}
+    figure{
+        margin-bottom: 50px;
+    } 
+    img{
+        width: 50px;
+        height: 50px;
+}
+
+#projects{
+    fieldset{
+        background:linear-gradient(90deg, rgb(173, 216, 230) 0%, aliceblue 100%);
+        border: 0px;
+        legend{
+            font-weight: bolder;
+        }
+    }
+    article{
+        padding-left: 70px;
+        margin-right: 100px;
+    }
+    article hr{
+        width: 50%;
+        text-align: center;
+        height: 1px;
+        background-color: black;
+    }
+}
+h2{
+    color: midnightblue;
+}
+
+footer{
+    margin-top: 10px;
+    text-align: center;
+    background-color: lightblue;
+}
+
+.my_form {
+    margin: 0 25% ;
+    width: 50%;
+    text-align: center;
+    input, textarea{
+        width: 100%;
+        margin-top: 15px;
+    border-radius: 5px;
+    border-color: rgb(144, 145, 148);
+    }
+    textarea{height: 150px;}
+    button{
+        background-color: white;
+        color: midnightblue;
+        border-radius: 10px;
+        border: 1px solid midnightblue;
+        font-size: xx-large;
+        margin: 40px 0;
+    }
+    button:hover{
+        color: white;
+        background-color: midnightblue;
+
+    }
+    h3{text-align: start;}
+}
+
+#my_recommandations{
+    margin-left: 70px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    p{
+        padding: 10px;
+        width: 250px;
+        height: 150px;
+        border: lightgray 2px solid;
+        border-radius: 10px;
+        text-align: left;
+        font-size: smaller;
+        font-style: italic;
+        
+        }
+}
+
+.home_btn{
+    width: 35px;
+    height: 30px;
+    background-color: midnightblue;
+    color: white;
+    border-radius: 100%;
+    text-align: center;
+    padding-top: 5px;
+    float: right;
+  /*  position: fixed;*/
+}
+
+
+.popup {
+    width:400px;
+    background-color: #e8bcf0;
+    border-radius: 3mm;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    position: fixed;
+    /* padding: 30px; */
+    visibility: hidden;
+  }
+  
+  .popup img {
+    padding-top: 20px;
+  }
+  
+  .popup button {
+    background-color: #fff;
+    border: 1px solid #7600bc;
+    color: #7600bc;
+    display: block;
+    border-radius: 6px;
+    text-align: center;
+    margin: 50px;
+    padding: 10px;
+    width: 2in;
+    font-size: 20px;
+    margin-left: 25%;
+  }
+  
+  .popup button:hover {
+    background-color: #fff;
+    border: 2px solid #7600bc;
+    color: #7600bc;
+    display: block;
+    font-weight: bolder;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 25%;
+  }
